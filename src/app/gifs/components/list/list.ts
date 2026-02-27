@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component, input, Input } from '@angular/core';
 import { ListItem } from "./list-item/list-item";
+import { Gif } from '../../interfaces/gif.interface';
 
 @Component({
   selector: 'gif-list',
@@ -9,5 +10,5 @@ import { ListItem } from "./list-item/list-item";
 })
 export class List {
   // todo: input string[]
-  gifs= input.required<string[]>();
+  gifs= input.required<Gif[]>();
 }
